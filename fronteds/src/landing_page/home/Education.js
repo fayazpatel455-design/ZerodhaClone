@@ -1,5 +1,5 @@
-import React from 'react';
- 
+import {Link} from "react-router-dom"
+
 function Education() {
     return (  
          <div className='container mt-5 p-5'>
@@ -12,7 +12,7 @@ function Education() {
                     <p >Versity, the largest online stock market education book in the world covering everything from the basic to advanced trading.</p>
                     <a href='' className='text-decoration-none ' >Versity <i class="fa-solid fa-arrow-right-long"></i></a>
                     <p className='mt-5'>TradingQ&A, the most active trading and investment community in india for all your market related queries. </p>
-                    <a href='' className='text-decoration-none ' >TradingQ&A <i class="fa-solid fa-arrow-right-long"></i></a>
+                    <Link to={"/"} className='text-decoration-none ' >TradingQ&A <i class="fa-solid fa-arrow-right-long"></i></Link>
                 </div>
             </div>
         </div>

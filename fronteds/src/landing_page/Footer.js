@@ -1,5 +1,4 @@
-import React from "react";
-
+import {Link} from "react-router-dom"
 function Footer() {
   return (
     <footer className="bg-secondary-subtle bg-dark-subtle   ">
@@ -13,43 +12,43 @@ function Footer() {
         </div>
         <div className="col footer-links">
           <p><b>Company</b></p>
-          <a href="/about"  >About</a>
+          <Link to={"/about"}>About</Link>
           <br />
-          <a href="/products"  >Products</a>
+          <Link to={"/products"}>Products</Link>
           <br />
-          <a href="/pricing"  >Pricing</a>
+          <Link to={"/pricing"}>Pricing</Link>
           <br />
-          <a href="/">Referral programme</a>
+          <Link to={"/"}>Referral programme</Link>
           <br />
-          <a href="/">Careers</a>
+          <Link to={"/"}>Careers</Link>
           <br />
-          <a href="/">Zerodha.tech</a>
+          <Link to={"/"}>Zerodha.tech</Link>
           <br />
-          <a href="/">Press & media</a>
+          <Link to={"/"}>Press & media</Link>
           <br />
-          <a href="/">Zerodha cares (CSR)</a>
+          <Link to={"/"}>Zerodha cares (CSR)</Link>
           <br />
         </div>
         <div className="col footer-links">
           <p><b>Support</b></p>
-          <a href="/">Contact</a>
+          <Link to={"/"}>Contact</Link>
           <br />
-          <a href="/">Support portal</a>
+          <Link to={"/"}>Support portal</Link>
           <br />
-          <a href="/">Z-Connect blog</a>
+          <Link to={"/"}>Z-Connect blog</Link>
           <br />
-          <a href="/">List of charges</a>
+          <Link to={"/"}>List of charges</Link>
           <br />
-          <a href="/">Downloads & resources</a>
+          <Link to={"/"}>Downloads & resources</Link>
           <br />
         </div>
         <div className="col footer-links">
           <p><b>Account</b></p>
-          <a href="/">Open an account</a>
+          <Link to={"/"}>Open an account</Link>
           <br />
-          <a href="/">Fund transfer</a>
+          <Link to={"/"}>Fund transfer</Link>
           <br />
-          <a href="/">60 day challenge</a>
+          <Link to={"/"}>60 day challenge</Link>
           <br />
         </div>
       </div>

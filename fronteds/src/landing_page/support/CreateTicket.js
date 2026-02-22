@@ -1,5 +1,4 @@
-import React from "react";
-
+import {Link} from "react-router-dom"
 function CreateTicket() {
   return (
     <div className="container">
@@ -11,99 +10,99 @@ function CreateTicket() {
           <h4 className=" mb-5 fw-normal">
             <i class="fa fa-plus-circle" aria-hidden="true"></i> Account Opening
           </h4>
-          <a href="">Online Account Opening</a>
+          <Link to={"/"}>Online Account Opening</Link>
           <br></br>
-          <a href="">Offline Account Opening</a>
+          <Link to={"/"}>Offline Account Opening</Link>
           <br></br>
-          <a href=""> Company, Partnership and HUF Account Opening</a>
+          <Link to={"/"}> Company, Partnership and HUF Account Opening</Link>
           <br></br>
-          <a href="">NRI Account Opening</a>
+          <Link to={"/"}>NRI Account Opening</Link>
           <br></br>
-          <a href="">Charges at Zerodha</a>
+          <Link to={"/"}>Charges at Zerodha</Link>
           <br></br>
-          <a href=""> Zerodha IDFC FIRST Bank 3-in-1 Account</a>
+          <Link to={"/"}> Zerodha IDFC FIRST Bank 3-in-1 Account</Link>
           <br></br>
-          <a href="">Getting Started</a>
+          <Link to={"/"}>Getting Started</Link>
         </div>
         <div className="col-4 mt-4 mb-4 p-4" style={{ lineHeight: "2.5" }}>
           <h4 className="mb-5 fw-normal">
             <i class="fa-solid fa-user"></i> Your Zerodha Account
           </h4>
-          <a href="">Login Credentials</a>
+          <Link to={"/"}>Login Credentials</Link>
           <br></br>
-          <a href="">Account Modification and Segment addition</a>
+          <Link to={"/"}>Account Modification and Segment addition</Link>
           <br></br>
-          <a href="">DP DI and bank details</a>
+          <Link to={"/"}>DP DI and bank details</Link>
           <br></br>
-          <a href="">Your Profile</a>
+          <Link to={"/"}>Your Profile</Link>
           <br></br>
-          <a href="">Transfer and conversion of shares</a>
-          <a href=""></a>
+          <Link to={"/"}>Transfer and conversion of shares</Link>
+          <Link to={"/"}></Link>
         </div>
         <div className="col-4 mt-4 mb-4 p-4" style={{ lineHeight: "2.5" }}>
           <h4 className="mb-5 fw-normal">
             <i class="fa-solid fa-chart-column"></i> Your Zerodha Account
           </h4>
-          <a href="">Kite Web and Mobile</a>
+          <Link to={"/"}>Kite Web and Mobile</Link>
           <br></br>
-          <a href="">Trading FAQs</a>
+          <Link to={"/"}>Trading FAQs</Link>
           <br></br>
-          <a href="">Margin Trading Facility (MTF) and Margins</a>
+          <Link to={"/"}>Margin Trading Facility (MTF) and Margins</Link>
           <br></br>
-          <a href="">Corporate Action</a>
+          <Link to={"/"}>Corporate Action</Link>
           <br></br>
-          <a href="">Sentinel</a>
+          <Link to={"/"}>Sentinel</Link>
           <br></br>
-          <a href="">Kite API</a>
+          <Link to={"/"}>Kite API</Link>
           <br></br>
-          <a href="">Pi and other platform</a>
+          <Link to={"/"}>Pi and other platform</Link>
           <br></br>
-          <a href="">Stockerports+</a>
+          <Link to={"/"}>Stockerports+</Link>
           <br></br>
-          <a href="">GTT</a>
+          <Link to={"/"}>GTT</Link>
           <br></br>
         </div>
         <div className="col-4 mt-4 mb-4 p-4" style={{ lineHeight: "2.5" }}>
           <h4 className="mb-5 fs-3 fw-normal"><i class="fa-regular fa-credit-card"></i> Funds</h4>
-          <a href="">Adding Funds</a>
+          <Link to={"/"}>Adding Funds</Link>
           <br></br>
-          <a href="">Fund Withdrawal</a>
+          <Link to={"/"}>Fund Withdrawal</Link>
           <br></br>
-          <a href="">eMandates</a>
+          <Link to={"/"}>eMandates</Link>
           <br></br>
-          <a href="">Adding Bank Accounts</a>
+          <Link to={"/"}>Adding Bank Accounts</Link>
         </div>
         <div className="col-4  mt-4 mb-4 p-4" style={{ lineHeight: "2.5" }}>
           <h4 className="mb-5 fs-3 fw-normal"><i class="fa-solid fa-circle-notch"></i> Console</h4>
-          <a href="">Reports</a>
+          <Link to={"/"}>Reports</Link>
           <br></br>
-          <a href="">Ledger</a>
+          <Link to={"/"}>Ledger</Link>
           <br></br>
-          <a href="">Portfolio</a>
+          <Link to={"/"}>Portfolio</Link>
           <br></br>
-          <a href="">60 Day Challenge</a>
+          <Link to={"/"}>60 Day Challenge</Link>
           <br></br>
-          <a href="">IPO</a>
+          <Link to={"/"}>IPO</Link>
           <br></br>
-          <a href="">Referral Program</a>
+          <Link to={"/"}>Referral Program</Link>
         </div>
         <div className="col-4 mt-4 mb-4 p-4" style={{ lineHeight: "2.5" }}>
           <h4 className="mb-5 fs-3 fw-normal"><i class="fa-regular fa-circle"></i> Coin</h4>
-          <a href="">Understanding Mutual Funds</a>
+          <Link to={"/"}>Understanding Mutual Funds</Link>
           <br></br>
-          <a href="">About Coin</a>
+          <Link to={"/"}>About Coin</Link>
           <br></br>
-          <a href="">Buying and Selling through Coin</a>
+          <Link to={"/"}>Buying and Selling through Coin</Link>
           <br></br>
-          <a href="">Starting an SIP</a>
+          <Link to={"/"}>Starting an SIP</Link>
           <br></br>
-          <a href="">Managing your Portfolio</a>
+          <Link to={"/"}>Managing your Portfolio</Link>
           <br></br>
-          <a href="">Coin App</a>
+          <Link to={"/"}>Coin App</Link>
           <br></br>
-          <a href="">Moving to Coin</a>
+          <Link to={"/"}>Moving to Coin</Link>
           <br></br>
-          <a href="">Government Securities</a>
+          <Link to={"/"}>Government Securities</Link>
         </div>
         </div>
     </div>

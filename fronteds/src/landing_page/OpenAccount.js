@@ -1,5 +1,3 @@
-import React from "react";
-
 function OpenAccount() {
   return (
     <div className="container text-center  p-6 mb-5 ">

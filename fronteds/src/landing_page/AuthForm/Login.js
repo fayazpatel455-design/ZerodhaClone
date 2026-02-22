@@ -30,7 +30,7 @@ function Login() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      let { data } =await axios.post("http://localhost:5000/login", inputValue, {
+      let { data } =await axios.post("https://zerodhaclone-01-ei19.onrender.com/login", inputValue, {
         withCredentials: true,
       });
       const { success, message } = data;

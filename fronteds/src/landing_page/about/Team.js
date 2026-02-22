@@ -1,4 +1,4 @@
-import React from "react";
+import {Link} from "react-router-dom"
 
 function Team() {
   return (
@@ -28,7 +28,7 @@ function Team() {
           <p>Playing basketball is his zen.</p>
           <p>
             Connect on <a href="">Homepage</a> / <a href="">TradingQnA</a> /{" "}
-            <a href="">Twitter</a>
+            <Link to={"/"}>Twitter</Link>
           </p>
         </div>
       </div>

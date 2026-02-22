@@ -1,6 +1,4 @@
-import React from "react";
 import { Link } from "react-router-dom";
-import Login from "./AuthForm/Login";
 function Navbar() {
   return (
     <div>
@@ -10,7 +8,7 @@ function Navbar() {
       >
         <div className="container p-2 ">
           <Link className="navbar-brand" to="/">
-            <img src="media/images/logo.svg" style={{ width: "25%" }}></img>
+            <img src="media/images/logo.svg" style={{ width: "25%" }} alt="Zerodha clone logo"></img>
           </Link>
           <button
             className="navbar-toggler"

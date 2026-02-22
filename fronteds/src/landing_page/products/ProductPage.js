@@ -1,5 +1,4 @@
-import React from "react";
-
+import {Link} from "react-router-dom"
 import Hero from "./Hero";
 import LeftSection from "./LeftSection";
 import RightSection from "./RightSection";
@@ -49,7 +48,7 @@ function ProductPage() {
         appStore=""
       />
       <p className="text-center my-5">
-        Want to know more about technology stack? Check out the <a href="">Zerodha.tech</a> blog.
+        Want to know more about technology stack? Check out the <Link to={"/"}>Zerodha.tech</Link> blog.
       </p>
       <Universe />
     </div>

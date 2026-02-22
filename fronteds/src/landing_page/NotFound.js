@@ -1,6 +1,3 @@
-import React from "react";
-import { Link } from "react-router-dom";
-
 function NotFound() {
   return (
     <div className="container text-center  p-6 mb-5 ">

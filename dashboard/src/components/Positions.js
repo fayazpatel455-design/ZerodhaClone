@@ -9,7 +9,7 @@ import axios from "axios";
 const Positions = () => {
   const [allPosition,setAllPosition]=useState([]);
 useEffect(()=>{
-  axios.get("http://localhost:5000/allPosition").then((res)=>{
+  axios.get("https://zerodhaclone-01-ei19.onrender.com/allPosition").then((res)=>{
     setAllPosition(res.data);
     // console.log(res.data);
   });

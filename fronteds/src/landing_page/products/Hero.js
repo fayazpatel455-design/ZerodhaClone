@@ -1,5 +1,4 @@
-import React from "react";
-
+import {Link} from "react-router-dom"
 function Hero() {
   return (
     <div className=" container border-bottom mb-5">
@@ -8,9 +7,9 @@ function Hero() {
         <h3  className="mt-3 fs-5 text-muted">Sleek, modern and intutive trading platforms</h3>
         <p className="mt-3 mb-5">
           check out our{" "}
-          <a href="">
+          <Link to={"/"}>
             investment offering <i className="fa-solid fa-arrow-right-long"></i>
-          </a>
+          </Link>
         </p>
       </div>
     </div>
