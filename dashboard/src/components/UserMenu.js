@@ -20,7 +20,7 @@ function UserMenu() {
     return () => {
       document.removeEventListener("mousedown", handleClickOutside);
     };
-  }, []);
+  }, [setShowLogout]);
 
   return (
     <div ref={menuRef} style={{ position: "relative" }}>

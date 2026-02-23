@@ -15,7 +15,7 @@ const Logout = ({ showLogout, setShowLogout }) => {
     return () => {
       document.removeEventListener("mousedown", handleClickOutside);
     };
-  }, []);
+  }, [setShowLogout]);
 
   if (!showLogout) return null;
 
