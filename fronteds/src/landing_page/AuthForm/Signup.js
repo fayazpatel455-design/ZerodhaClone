@@ -2,9 +2,9 @@ import { useState } from "react";
 import axios from "axios";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-// import { useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 function Signup() {
-  // const navigate = useNavigate();
+  const navigate = useNavigate();
    const [inputValue, setInputValue] = useState({
     email: "",
     password: "",
@@ -39,9 +39,8 @@ function Signup() {
       if (success) {
         handleSuccess(message);
         setTimeout(() => {
-          // navigate("http://localhost:3001");
-          // navigate("/Dashboard");
-          window.location.href = "http://localhost:3001";
+          navigate("https://dashboard-00.netlify.app/apps");
+          // window.location.href = "https://dashboard-00.netlify.app/apps";
         }, 1000);
       } else {
         handleError(message);
