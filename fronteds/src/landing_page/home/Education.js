@@ -10,7 +10,7 @@ function Education() {
                 <div className='col-6'>
                     <h1 className='mb-5 fs-2'>Free and open market education</h1>
                     <p >Versity, the largest online stock market education book in the world covering everything from the basic to advanced trading.</p>
-                    <a href='' className='text-decoration-none ' >Versity <i class="fa-solid fa-arrow-right-long"></i></a>
+                    <Link to={"/"} className='text-decoration-none ' >Versity <i class="fa-solid fa-arrow-right-long"></i></Link>
                     <p className='mt-5'>TradingQ&A, the most active trading and investment community in india for all your market related queries. </p>
                     <Link to={"/"} className='text-decoration-none ' >TradingQ&A <i class="fa-solid fa-arrow-right-long"></i></Link>
                 </div>
