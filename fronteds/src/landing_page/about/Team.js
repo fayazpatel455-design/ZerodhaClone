@@ -1,4 +1,5 @@
-import {Link} from "react-router-dom"
+import {Link} from "react-router-dom";
+import HomePage from "../home/HomePage";
 
 function Team() {
   return (
@@ -11,7 +12,7 @@ function Team() {
           <img
             src="media/images/nithinKamath.jpg"
             style={{ borderRadius: "50%", width: "50%" }}
-            alt={member.name || "Team member"}
+            alt={ "Team member"}
           ></img>
           <h4 className="mt-5">Nithin Kamath</h4>
           <h6>Founder, CEO</h6>

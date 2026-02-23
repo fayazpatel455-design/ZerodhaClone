@@ -48,6 +48,6 @@ function Awards() {
       </div>
     </div>
   );
-}img
+}
 
 export default Awards;
