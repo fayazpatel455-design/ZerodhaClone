@@ -28,10 +28,10 @@ function LeftSection({
           </div>
           <div className="mt-3">
             <Link to={googleplay}  className="p-3">
-              <img src="media/images/googlePlayBadge.svg"></img>
+              <img src="media/images/googlePlayBadge.svg" alt="Product interface preview"></img>
             </Link>
             <Link to={appStore}  className="p-3" >
-              <img src="media/images/appStoreBadge.svg"></img>
+              <img src="media/images/appStoreBadge.svg" alt="Product interface preview"></img>
             </Link>
           </div>
         </div>

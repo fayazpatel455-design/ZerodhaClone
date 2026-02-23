@@ -4,7 +4,7 @@ function Hero() {
       <div className="row">
         <img
           src="Media/images/homeHero.png"
-          alt="Hero Image"
+           alt="Trading dashboard preview"
           className="mb-5"
         />
         <h1 className="mt-5">Invest in everything</h1>
