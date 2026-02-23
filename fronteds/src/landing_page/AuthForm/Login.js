@@ -97,7 +97,3 @@ function Login() {
   );
 }
 export default Login;
-// fpatel@gmail.com
-// 12345
-
-//patels@gmail.com

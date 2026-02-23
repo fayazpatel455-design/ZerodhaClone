@@ -1,7 +1,7 @@
 {
-  "engines":{
-    "node":"v22.18.0"
-  },
+  "engines": {
+  "node": "18.x"
+},
   "name": "fronted",
   "version": "0.1.0",
   "private": true,
