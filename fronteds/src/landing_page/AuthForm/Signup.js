@@ -39,7 +39,8 @@ function Signup() {
       if (success) {
         handleSuccess(message);
         setTimeout(() => {
-          navigate("https://zerodhaclone-dashboard-0.netlify.app/");
+          // navigate("https://zerodhaclone-dashboard-0.netlify.app/");
+          window.location.href="https://zerodhaclone-dashboard-0.netlify.app/"
           // window.location.href = "https://dashboard-00.netlify.app/apps";
         }, 1000);
       } else {

@@ -37,8 +37,9 @@ function Login() {
       if (success) {
         handleSuccess(message);
         setTimeout(() => {
+          window.location.href="https://zerodhaclone-dashboard-0.netlify.app/"
         //   navigate("http://localhost:3001");
-        window.location.href = "https://zerodhaclone-dashboard-0.netlify.app/";
+        // window.location.href = "https://zerodhaclone-dashboard-0.netlify.app/";
         }, 1000);
       } else {
         handleError(message);
