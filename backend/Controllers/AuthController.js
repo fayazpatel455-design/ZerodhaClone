@@ -89,13 +89,17 @@ module.exports.Logout = async (req, res) => {
     const { email, password } = req.body;
     const user = await User.findOne({ email });
 
-    if (!user) {
+    
+    const isMatchEmail = await bcrypt.compare(
+      email,
+      user.email
+    );
+    if (!isMatchEmail) {
       return res.json({
         success: false,
         message: "User not found",
       });
     }
-
     // Password check
      const isMatch = await bcrypt.compare(
       password,
