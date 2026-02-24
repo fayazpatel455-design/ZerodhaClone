@@ -2,9 +2,9 @@ import { useState } from "react";
 import axios from "axios";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import { useNavigate } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
 function Signup() {
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
    const [inputValue, setInputValue] = useState({
     email: "",
     password: "",
