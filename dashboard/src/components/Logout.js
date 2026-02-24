@@ -1,11 +1,11 @@
-import { useRef, useEffect,useState } from "react";
+import { useRef, useEffect, useState } from "react";
 import { Navigate } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import axios from "axios";
 const Logout = ({ showLogout, setShowLogout }) => {
   const boxRef = useRef();
-  const [inputValue, setInputValue] = useState("");
+  const [inputValue, setInputValue] = useState({ email: "", password: "" });
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (boxRef.current && !boxRef.current.contains(event.target)) {
@@ -24,29 +24,34 @@ const Logout = ({ showLogout, setShowLogout }) => {
 
   const handleError = (err) =>
     toast.error(err, {
-      position: "bottom-left",
+      position: "top-center",
     });
   const handleSuccess = (msg) =>
     toast.success(msg, {
-      position: "bottom-left",
+      position: "top-center",
     });
 
-  const handleSubmit = async () => {
+  const handleSubmit = async (e) => {
+    e.preventDefault();
     try {
-      let { response } = await axios.post(
+      let { data } = await axios.post(
         "https://zerodhaclone-01-ei19.onrender.com/logout",
         inputValue,
         {
           withCredentials: true,
         },
       );
-      const data = response.data;
       const { success, message } = data;
       if (success) {
         handleSuccess(message);
         setTimeout(() => {
-          Navigate("https://zerodhaclone-00.netlify.app/");
+          // Navigate("https://zerodhaclone-00.netlify.app/");
+          window.location.href = "https://zerodhaclone-00.netlify.app/";
         }, 1000);
+      }else {
+
+        handleError(message);
+
       }
     } catch (err) {
       handleError(err);
@@ -69,8 +74,8 @@ const Logout = ({ showLogout, setShowLogout }) => {
           <input
             className="form-control mb-3"
             placeholder="Enter email"
-            value={inputValue}
-            onChange={(e) => setInputValue(e.target.value)}
+            value={inputValue.email}
+            onChange={(e) => setInputValue({...inputValue,email:e.target.value})}
           />
 
           <label>Password</label>
@@ -79,8 +84,8 @@ const Logout = ({ showLogout, setShowLogout }) => {
             type="password"
             className="form-control mb-3"
             placeholder="Enter password"
-            value={inputValue}
-            onChange={(e) => setInputValue(e.target.value)}
+            value={inputValue.password}
+            onChange={(e) => setInputValue({...inputValue,password:e.target.value})}
           />
 
           <button className="btn btn-danger w-100">Logout</button>

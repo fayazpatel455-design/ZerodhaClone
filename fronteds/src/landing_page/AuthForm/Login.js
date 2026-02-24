@@ -20,11 +20,11 @@ function Login() {
   };
   const handleError = (err) =>
     toast.error(err, {
-      position: "bottom-left",
+      position: "top-center",
     });
   const handleSuccess = (msg) =>
     toast.success(msg, {
-      position: "bottom-left",
+      position: "top-center",
     });
 
   const handleSubmit = async (e) => {
