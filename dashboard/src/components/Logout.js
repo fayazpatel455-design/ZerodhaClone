@@ -1,11 +1,11 @@
-import { useRef, useEffect } from "react";
+import { useRef, useEffect,useState } from "react";
 import { Navigate } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-
+import axios from "axios";
 const Logout = ({ showLogout, setShowLogout }) => {
   const boxRef = useRef();
-
+  const [inputValue, setInputValue] = useState("");
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (boxRef.current && !boxRef.current.contains(event.target)) {
@@ -31,22 +31,27 @@ const Logout = ({ showLogout, setShowLogout }) => {
       position: "bottom-left",
     });
 
-  const handleSubmit = async (req, res) => {
-    let { data } = await axios.post(
-      "https://zerodhaclone-01-ei19.onrender.com/logout",
-      inputValue,
-      {
-        withCredentials: true,
-      },
-    );
+  const handleSubmit = async () => {
+    try {
+      let { response } = await axios.post(
+        "https://zerodhaclone-01-ei19.onrender.com/logout",
+        inputValue,
+        {
+          withCredentials: true,
+        },
+      );
+      const data = response.data;
+      const { success, message } = data;
+      if (success) {
+        handleSuccess(message);
+        setTimeout(() => {
+          Navigate("");
+        }, 1000);
+      }
+    } catch (err) {
+      handleError(err);
+    }
   };
-  const {success,message}=data;
-  if(success){
-    handleSuccess(message);
-    setTimeout(()=>{
-      Navigate("")
-    },1000);
-  }
 
   return (
     <div
@@ -61,7 +66,12 @@ const Logout = ({ showLogout, setShowLogout }) => {
         <form onSubmit={handleSubmit}>
           <label>Email</label>
 
-          <input className="form-control mb-3" placeholder="Enter email" />
+          <input
+            className="form-control mb-3"
+            placeholder="Enter email"
+            value={inputValue}
+            onChange={(e) => setInputValue(e.target.value)}
+          />
 
           <label>Password</label>
 
@@ -69,6 +79,8 @@ const Logout = ({ showLogout, setShowLogout }) => {
             type="password"
             className="form-control mb-3"
             placeholder="Enter password"
+            value={inputValue}
+            onChange={(e) => setInputValue(e.target.value)}
           />
 
           <button className="btn btn-danger w-100">Logout</button>
