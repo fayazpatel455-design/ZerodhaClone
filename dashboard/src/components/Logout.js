@@ -45,7 +45,7 @@ const Logout = ({ showLogout, setShowLogout }) => {
       if (success) {
         handleSuccess(message);
         setTimeout(() => {
-          Navigate("");
+          Navigate("https://zerodhaclone-00.netlify.app/");
         }, 1000);
       }
     } catch (err) {
