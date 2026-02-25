@@ -51,6 +51,9 @@ app.use("/allPosition",postionRoute);
 const OrderRoute=require("./Routes/Orders");
 app.use("/allOrders",OrderRoute);
 
+const profileRoute=require("./Routes/Profile");
+app.use("/profile",profileRoute)
+
 // const marketRoute = require("./Routes/MarketRoute");
 // app.use("/api/stocks", marketRoute);
 

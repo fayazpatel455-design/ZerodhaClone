@@ -1,7 +1,9 @@
 import { useState, useRef, useEffect } from "react";
 import Logout from "./Logout";
+import { useNavigate } from "react-router-dom";
 
 function UserMenu() {
+  const navigate=useNavigate();
   const [open, setOpen] = useState(false);
   const [showLogout, setShowLogout] = useState(false);
 
@@ -51,8 +53,8 @@ function UserMenu() {
             boxShadow: "0px 2px 10px rgba(0,0,0,0.1)",
           }}
         >
-          <div style={{ padding: "10px" }}>
-            <i className="fa-solid fa-circle-user"></i> Profile
+          <div style={{ padding: "10px" }} onClick={() => navigate("/profile")}>
+            <i className="fa-solid fa-circle-user" ></i> Profile
           </div>
 
           <div style={{ padding: "10px" }}>

@@ -11,6 +11,7 @@ import Summary from "./Summary";
 import WatchList from "./WatchList";
 import { GeneralContextProvider } from "./GeneralContext";
 import Logout from "./Logout";
+import UserProfile from "./Userprofile";
 
 const Dashboard = () => {
   return (
@@ -27,6 +28,7 @@ const Dashboard = () => {
           <Route path="/funds" element={<Funds />} />
           <Route path="/apps" element={<Apps />} />
           <Route path="/logout" element={<Logout />} />
+          <Route path="/profile" element={<UserProfile/>} />
         </Routes>
       </div>
       </GeneralContextProvider>
