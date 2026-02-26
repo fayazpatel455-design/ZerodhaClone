@@ -25,7 +25,7 @@ function UserMenu() {
   }, [setShowLogout]);
 
   return (
-    <div ref={menuRef} style={{ position: "relative" }}>
+    <div className="container-fluid mt-4 px-0" ref={menuRef} style={{ position: "relative" }}>
       {/* USERID */}
 
       <div
