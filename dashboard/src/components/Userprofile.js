@@ -19,6 +19,8 @@ function UserProfile() {
     className="d-flex  justify-content-center  "
     style={{ minHeight: "80vh" }}
   >
+
+    
     <div className="card p-4 text-center shadow" style={{ width: "500px" }}>
       
       <div

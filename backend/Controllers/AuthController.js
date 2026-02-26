@@ -19,11 +19,11 @@ module.exports.Signup = async (req, res) => {
 
     const token = createSecretToken(user._id);
 
-    res.cookie("token", token, {
-      httpOnly: true,
-      secure: false,
-      sameSite: "lax",
-    });
+   res.cookie("token", token, {
+  httpOnly: true,
+  secure: true,
+  sameSite: "None",
+});
 
     res.status(201).json({
       success: true,
@@ -51,11 +51,11 @@ module.exports.Login = async (req, res) => {
       return res.json({ message: "Incorrect password or email" });
     }
     const token = createSecretToken(user._id);
-    res.cookie("token", token, {
-      httpOnly: true,
-      secure: false, // production me true
-      sameSite: "lax",
-    });
+  res.cookie("token", token, {
+  httpOnly: true,
+  secure: true,
+  sameSite: "None",
+});
     res.status(201).json({
       success: true,
       message: "Login successful",

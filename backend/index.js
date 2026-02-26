@@ -13,8 +13,8 @@ app.use(express.urlencoded({ extended: true }));
 
 const cors=require("cors");
 app.use(cors({
-  // origin: ["http://localhost:3000", "http://localhost:3001"],
-  origin:true,
+  origin: ["https://zerodhaclone-dashboard-0.netlify.app", "https://zerodhaclone-00.netlify.app"],
+  // origin:true,
   credentials: true
 }));
 
